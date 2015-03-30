@@ -1,6 +1,6 @@
 # react-native-htmltext
 
-Experiment to use HTML like markup to create stylized text in react-native.
+WIP: Experiment to use HTML like markup to create stylized text in react-native.
 
 ## Example 
 
