@@ -15,7 +15,7 @@ var HtmlText = require('./lib/HtmlText')
 
 var HtmlTextApp = React.createClass({
   render: function() {
-    var html = `<blockquote><p>Hello world <b>world</b> <i>foo</i> <blockquote>bar hahh</blockquote></p></blockquote><p>This is another example.</p>`
+    var html = `<p>Hello world <b>world</b> <i>foo</i> bar hahh</p>`
 
     return (
       <View style={styles.container}>
@@ -30,7 +30,7 @@ var styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'stretch',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#ffffff',
     margin: 10,
 
   },
