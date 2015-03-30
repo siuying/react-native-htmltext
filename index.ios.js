@@ -15,7 +15,7 @@ var HtmlText = require('./lib/HtmlText')
 
 var HtmlTextApp = React.createClass({
   render: function() {
-    var html = `<blockquote><p>Hello world <b>world</b> <i>foo</i> bar hahh</p><p>another line!</p></blockquote><p>this is a good example!</p>`
+    var html = `<blockquote><p>Hello world <b>world</b> <i>foo</i> <blockquote>bar hahh</blockquote></p></blockquote><p>Hello!</p>`
 
     return (
       <View style={styles.container}>
