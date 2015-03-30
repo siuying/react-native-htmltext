@@ -11,12 +11,16 @@ var {
   Text,
   View,
 } = React;
+var HtmlText = require('./lib/HtmlText')
 
 var HtmlTextApp = React.createClass({
   render: function() {
-    var html = `<p>Hello world</p>`
+    var html = `<blockquote><p>Hello world <b>world</b> <i>foo</i> bar hahh</p><p>another line!</p></blockquote><p>this is a good example!</p>`
+
     return (
-      <HtmlText html={html}/>
+      <View style={styles.container}>
+        <HtmlText style={styles.welcome} html={html}></HtmlText>
+      </View>
     );
   }
 });
@@ -25,18 +29,13 @@ var styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'stretch',
     backgroundColor: '#F5FCFF',
+    margin: 10,
+
   },
   welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-  },
+  }
 });
 
 AppRegistry.registerComponent('HtmlTextApp', () => HtmlTextApp);
