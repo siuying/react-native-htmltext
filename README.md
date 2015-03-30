@@ -2,6 +2,25 @@
 
 WIP: Experiment to use HTML like markup to create stylized text in react-native.
 
+## Why?
+
+React Native provide a Text element for stylized text. Instead of using ``NSAttributedString``, 
+you creat nested Text:
+
+```
+<Text style={{fontWeight: 'bold'}}>
+  I am bold 
+  <Text style={{color: 'red'}}> and red </Text>
+</Text>
+```
+
+While this approach is excellent for static interface text, what if we have dynamic text with format we 
+do not know until we use it? ``HtmlText`` is a component to present a limited subset of HTML as
+React Native views.
+
+**Important**: This is not going to replace your ``WebView`` for HTML rendering, instead it use a
+limited subset of HTML and try to present it using native ``Text`` elements in a reasonable way.
+
 ## Example 
 
 ### Input
