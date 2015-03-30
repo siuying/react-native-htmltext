@@ -10,19 +10,7 @@ Use HTML like markup to create stylized text in ReactNative.
 <p>Hello world <b>world</b> <i>foo</i> bar hahh</p>
 ```
 
-### Result
-
-```html
-<View>
-  <Text>
-    <Text>Hello world </Text>
-    <Text>world</Text> 
-    <Text> </Text> 
-    <Text>foo</Text> 
-    <Text> bar hahh</Text>
-  </Text>
-</View>
-```
+<img src="https://raw.githubusercontent.com/siuying/react-native-htmltext/master/example1.png" />
 
 ### Input 
 
@@ -30,23 +18,4 @@ Use HTML like markup to create stylized text in ReactNative.
 <blockquote><p>Hello world <b>world</b> <i>foo</i> <blockquote>bar hahh</blockquote></p></blockquote>
 ```
 
-### Result
-
-```
-<View style={styles.blockquote}>
-  <View style={styles.p}>
-    <Text>
-      <Text>Hello world </Text>
-      <Text style={styles.b}>world</Text> 
-      <Text> </Text> 
-      <Text style={styles.i}>foo</Text> 
-      <Text> </Text>
-    </Text>
-    <View style={styles.blockquote}>
-      <Text>
-        <Text> bar hahh</Text>
-      </Text>
-    </View>
-  </View>
-</View>
-```
+<img src="https://raw.githubusercontent.com/siuying/react-native-htmltext/master/example2.png" />
